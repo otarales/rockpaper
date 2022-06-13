@@ -34,6 +34,6 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-const playerSelection = "Scissor";
+const playerSelection = "Paper";
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
