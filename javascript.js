@@ -30,7 +30,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (pS == "scissor" && cS == "paper") {
     return "You Win! Scissor beats Paper";
   } else if (pS === cS) {
-    return "Draw! Equal";
+    return "Draw! It's a tie";
   }
 }
 const playerSelection = "rock";
