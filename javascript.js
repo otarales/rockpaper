@@ -20,20 +20,16 @@ function playRound(playerSelection, computerSelection) {
     return "You Lose! Paper beats Rock";
   } else if (pS == "rock" && cS == "scissor") {
     return "You Win!  Rock beats Scissor";
-  } else if (pS == "rock" && cS == "rock") {
-    return "Draw! Equal";
   } else if (pS == "paper" && cS == "rock") {
     return "You Win! Paper beats Rock";
   } else if (pS == "paper" && cS == "scissor") {
     return "You Lose! Scissor beats Paper";
-  } else if (pS == "paper" && cS == "paper") {
-    return "Draw! Equal";
-    //for some reason i had to do the code above all over again.
   } else if (pS == "scissor" && cS == "rock") {
+    //for some reason i had to do the code above all over again.
     return "You Lose! Rock beats Scissor";
   } else if (pS == "scissor" && cS == "paper") {
     return "You Win! Scissor beats Paper";
-  } else if (pS == "scissor" && cS == "scissor") {
+  } else if (pS === cS) {
     return "Draw! Equal";
   }
 }
